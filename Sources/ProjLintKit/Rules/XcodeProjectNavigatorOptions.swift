@@ -97,7 +97,7 @@ class XcodeProjectNavigatorOptions: RuleOptions {
         return treeNodes(from: anyArray)
     }
 
-    private static func treeNodes(from array: [Any]) -> [TreeNode] {
+    static func treeNodes(from array: [Any]) -> [TreeNode] {
         return array.map { node in
             switch node {
             case let dict as [String: [Any]]:
